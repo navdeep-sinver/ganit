@@ -43,7 +43,7 @@ The answer shows up on the right as you type. There are no formulas to learn, no
 
 If you've used **Soulver** or **Numi**, Ganit works the same way. The difference is that it also understands how India talks about money, like lakh, crore, GST, LPA and `500/-`.
 
-**Jump to:** [Indian money](#-money-the-way-india-talks) · [Currencies](#-currency-converter-with-fresh-rates) · [Time zones](#-time-zones-dates-and-hours) · [Units](#-unit-converter-for-everyday-things) · [Notes that add up](#-notes-that-add-up) · [Your own units](#-your-own-units-and-functions) · [Themes](#-themes-dark-mode-and-van-gogh-backgrounds) · [Download](#download-and-install) · [FAQ](#faq)
+**Jump to:** [Indian money](#-money-the-way-india-talks) · [Currencies](#-currency-converter-with-fresh-rates) · [Time zones](#-time-zones-dates-and-hours) · [Units](#-unit-converter-for-everyday-things) · [Notes that add up](#-notes-that-add-up) · [Tags and budgets](#️-tags-that-add-up-track-trips-and-budgets) · [What-ifs](#️-drag-a-number-to-try-what-ifs) · [Share as a picture](#️-share-a-calculation-as-a-picture) · [Your own units](#-your-own-units-and-functions) · [Themes](#-themes-dark-mode-and-van-gogh-backgrounds) · [What's new](#whats-new-in-11) · [Download](#download-and-install) · [FAQ](#faq)
 
 ---
 
@@ -111,6 +111,48 @@ Write a list, and Ganit keeps the running total for you.
 
 <p align="center"><img src="docs/images/notes.png" width="760" alt="A Goa trip budget in Ganit: flights, hotel, scooter and food add up to a total of ₹44,200, then split four ways"></p>
 
+## 🏷️ Tags that add up: track trips and budgets
+
+Track **trip expenses**, **monthly spending** or a **shared flat budget** right in your notes, without a spreadsheet or an expense app. Add a tag like `#food` or `#travel` to any line, and Ganit adds up each tag for you.
+
+- **Tag any line:** `Dinner at the shack ₹2,400 #food`, `Flights ₹18,400 #travel`. Tags never change a line's answer.
+- **A tag strip** at the bottom of the sheet shows what every tag adds up to. Click a tag to light up its lines.
+- **`total #food`** adds up one tag from anywhere in the sheet. `average #food` works too.
+- **Budgets:** `#food budget ₹4,000` shows **₹950 left**, with a small bar that turns orange when you go over.
+- **Mixed currencies are fine:** `$100 #stay` and `₹850 #stay` add up in one currency. Things that can't be added (km and ₹) are never quietly mixed.
+- Tags count **inside their own sheet**, so your Goa trip and your November budget stay separate.
+
+Turn tags on in **Settings → Advanced**. There's a live demo right there.
+
+<p align="center"><img src="docs/images/tags.png" width="760" alt="A Goa trip in Ganit with #travel, #stay, #food and #fun tags. The tag strip shows #food ₹3,050 of a ₹4,000 budget, and the food lines are lit up."></p>
+
+## 🎚️ Drag a number to try what-ifs
+
+"What if the loan was 7 years instead of 5?" "What if rent went up to ₹28,000?" Hold **⌘** and drag any number left or right. Every answer that uses it changes as you drag, so you can try ideas without retyping anything.
+
+- Great for an **EMI calculator** what-if (rate, tenure, down payment), salary hikes, SIP amounts, prices and budgets
+- The step fits the number: 5 moves by 1, 8.5% by 0.1, ₹25,000 by 1,000
+- Hold **⇧** to go faster or **⌥** to go finer. No mouse? Use **⌃⌥↑** and **⌃⌥↓**.
+- **⌘Z** undoes the whole drag
+
+Turn it on in **Settings → Advanced**.
+
+<p align="center"><img src="docs/images/drag.png" width="760" alt="A car loan in Ganit: car price, deposit, a monthly EMI at 9% over 5 years, salary, and money left each month. The 9% is highlighted, ready to drag."></p>
+
+## 🖼️ Share a calculation as a picture
+
+Send a bill split, a trip total or a budget to friends on **WhatsApp**, **Messages** or **Mail** as a clean picture, in your own theme.
+
+- Click the **share button**, then **Copy as Picture** (or press **⌃⌘C**) and paste it anywhere
+- **Save as Picture** or **Share Picture** (AirDrop, Messages, Mail and more) from the same menu
+- Select some lines first to share **just those lines**
+- Tag totals and budgets come along at the bottom
+- **Export as PDF** and **copy as text with answers** are still there too
+
+<p align="center"><img src="docs/images/share-picture.png" width="700" alt="A shared Ganit picture of a Goa trip: every line with its answer, tag totals at the bottom and a small Made with Ganit note"></p>
+
+<p align="center"><img src="docs/images/advanced.png" width="640" alt="Ganit Settings, Advanced page: a live car-loan demo with draggable numbers, a tags demo with a tag strip, and switches for each feature"></p>
+
 ## ✨ Your own units and functions
 
 Teach Ganit the words you use.
@@ -143,9 +185,12 @@ Make it look the way you like.
 ## ⌨️ Always one shortcut away
 
 - Press **⌃⌥Space** in any app to show or hide Ganit. You can change the shortcut.
+- **A 10-second lesson** teaches it the first time you open Ganit: hold each key as it lights up, and you're done.
 - It lives in the **menu bar**, so you can keep it out of the Dock.
 - **Export** a sheet as a PDF (⇧⌘E), print it (⌘P), or copy it with its answers (⌥⌘C).
 - **`ganit-cli`** brings the same maths to Terminal, Raycast, Alfred and scripts: `ganit-cli "5 km in miles"`.
+
+<p align="center"><img src="docs/images/lesson.png" width="700" alt="Ganit's shortcut lesson: control and option keys lit up, with the hint Now tap Space"></p>
 
 ## 🔒 Your notes stay yours
 
@@ -155,6 +200,16 @@ Make it look the way you like.
 - **Updates itself:** new versions download in the background, and one click restarts into them.
 
 ---
+
+## What's new in 1.1
+
+- **Share any sheet as a picture**, ready for WhatsApp
+- **Settings → Advanced:** `#tags` that add up, budgets, and ⌘-drag numbers for what-ifs
+- **A quick hands-on lesson** for the ⌃⌥Space shortcut
+- The **Settings preview** now shows every change (decimal places, line spacing, size, bold)
+- Works better with **Stage Manager**, and **Esc** closes Settings
+
+Every version's notes are on the [Releases page](https://github.com/navdeep-sinver/ganit/releases). Ganit updates itself, so you get new versions automatically.
 
 ## Download and install
 
@@ -179,6 +234,9 @@ Works on **macOS 14 Sonoma or newer**, on **Apple silicon (M1, M2, M3, M4 and la
 | Esc | Show units, currencies and functions |
 | ⌘F | Find and replace |
 | ⌥⌘C | Copy the sheet with its answers |
+| ⌃⌘C | Copy the sheet as a picture |
+| ⌘-drag a number | Try other values (Settings → Advanced) |
+| ⌃⌥↑ / ⌃⌥↓ | Nudge the number at the cursor |
 | ⇧⌘E | Export as PDF |
 | ⌘P | Print |
 
@@ -201,6 +259,15 @@ Type `20 LPA monthly`. Ganit shows ₹1,66,666.67/month.
 
 **How do I calculate a home loan EMI?**
 Type `emi(₹50 lakh, 8.5%, 20 years)`. That's the loan amount, the yearly interest rate and the number of years.
+
+**How do I try a different interest rate or loan tenure quickly?**
+Turn on **Drag numbers** in Settings → Advanced. Then hold ⌘ and drag the rate or the years left and right, and watch the EMI change.
+
+**How do I track trip expenses or a monthly budget?**
+Add tags like `#food`, `#travel` or `#stay` to your lines (turn on **Tags** in Settings → Advanced). Ganit adds up each tag at the bottom of the sheet. Write `#food budget ₹4,000` to see how much is left.
+
+**Can I share a calculation on WhatsApp?**
+Yes. Click the share button and choose **Copy as Picture** (⌃⌘C), then paste it into WhatsApp, Messages or Mail. Select some lines first to share only those.
 
 **Does it work offline?**
 Yes. Everything works offline except fresh currency rates. Ganit uses the last rates it saved until it can get new ones.
