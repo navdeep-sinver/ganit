@@ -302,7 +302,7 @@ Every version's notes are on the [Releases page](https://github.com/navdeep-sinv
 
 ## Download and install
 
-1. **[Download Ganit.dmg](https://github.com/navdeep-sinver/ganit/releases/latest/download/Ganit.dmg)** (about 18 MB).
+1. **[Download Ganit.dmg](https://github.com/navdeep-sinver/ganit/releases/latest/download/Ganit.dmg)** (about 16 MB).
 2. Open it and drag **Ganit** into **Applications**.
 3. Open Ganit. Because it isn't from the App Store yet, macOS asks first:
    - Click **Done** on the warning.
